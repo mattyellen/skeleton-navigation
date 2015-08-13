@@ -9,6 +9,7 @@ describe('aurelia skeleton app', function() {
     po_skeleton = new PageObject_Skeleton();
     po_welcome = new PageObject_Welcome();
 
+    console.log("load - 1");
     browser.loadAndWaitForAureliaPage("http://localhost:9000");
   });
 
@@ -34,8 +35,10 @@ describe('aurelia skeleton app', function() {
     expect(po_welcome.openAlertDialog()).toBe(true);
   });
 
+/*
   it('should navigate to users page', () => {
     po_skeleton.navigateTo('#/users');
     expect(po_skeleton.getCurrentPageTitle()).toBe('Github Users | Aurelia');
   });
+  */
 });
